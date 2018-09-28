@@ -1,3 +1,24 @@
+body{
+  font-size: 1.4em;
+  font-family: $eco;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  h1, h2, h3, h4, h5,h6{
+    font-weight: 300;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
+.bar{
+  background-color: $black;
+  height: 6.8vh;
+}
+
 .background-portfolio{
   background-image: url('/dist/img/portfolio_bg.jpg');
   background-size: cover;
