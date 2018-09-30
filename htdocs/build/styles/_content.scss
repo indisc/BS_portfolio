@@ -1,7 +1,7 @@
 
 body{
   font-size: 1.4em;
-  font-family: $eco;
+  font-family: $SansCond;
   color: white;
   font-weight: 300;
   text-transform: uppercase;
@@ -15,17 +15,129 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-.bar{
-  background-color: $black;
-  height: 6.8vh;
+a{
+  color: $white;
+  letter-spacing: 0.03em;
+
+  &:hover{
+    color: $white;
+    font-weight: $wei6;
+    text-decoration: none;
+    transition: ease-in-out 500ms;
+  }
 }
 
 .background-portfolio{
-  background-image: url('/dist/img/portfolio_bg.jpg');
+  background-image: url('/dist/img/Startbild.png');
   background-size: cover;
-  background-position: center top;
+  background-position: 90% 90%;
   background-repeat: no-repeat;
+  height: 100vh;
 }
+
+
+.bar{
+  background-color: $black;
+  display: flex;
+  height: 8vw;
+  width: 100%;
+}
+
+.top-bar, .bottom-bar{
+  position: relative;
+}
+
+.top-bar .bar{
+  position: fixed;
+  top: 0;
+}
+
+.bottom-bar .bar{
+  position: fixed;
+  bottom: 0;
+}
+
+
+
+.bar:first-child{
+  justify-content: space-between;
+
+}
+
+.top{
+  padding-top: 3em;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1em;
+
+  .header-group{
+    max-width: 100%;
+    padding-left: $spa10 * 3;
+    h1{
+      font-size: 1.6em;
+      line-height: 1.2em;
+
+    }
+  }
+
+  .nav-bar{
+    padding-right: 3em;
+  }
+  .nav-bar > ul{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+
+  nav.nav-bar ul{
+    li:not(:last-child):after{
+      content: " | ";
+      padding-left: $spa05;
+      padding-right: $spa05;
+    }
+  }
+}
+
+.footer-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  >ul{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+
+    li:not(:last-child):after{
+      content: " | ";
+      padding-left: $spa05;
+      padding-right: $spa05;
+    }
+  }
+  .contact{
+    margin-left: $spa10 * 2;
+    display: list-item;
+    list-style-type: disc;
+    color: $white;
+  }
+}
+
+.content{
+  position: relative;
+
+
+  iframe.player{
+    width: 30%;
+    position: absolute;
+    top: 30em;
+    left: 70em;
+
+
+  }
+}
+
+
+
 
 
 

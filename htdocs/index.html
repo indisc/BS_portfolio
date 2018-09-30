@@ -18,37 +18,48 @@
 
 
 <body class="background-portfolio">
-    <header class="bar">
-        <div class="header-group">
-            <h1>Ben Sturm - Music & Sound Design for documentary / games / film</h1>
-        </div>
-        <div class="nav">
-            <ul class="list-unstyled">
-                <li><a href="">About</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">References</a></li>
-            </ul>
-        </div>
-    </header>
-    <footer class="bar">
-        <div class="footer-group">
-            <ul class="list-unstyled">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-            <div class="contact">
-                <p>contact
-                    <a href="mailto:info@sturmsounds.com">info@sturmsounds.com</a>
-                </p>
+
+    <div class="top-bar">
+        <header class="bar top">
+            <div class="header-group">
+                <h1>Ben Sturm - Music & Sound Design <br> for documentary / games / film</h1>
             </div>
+            <nav class="nav-bar">
+                <ul class="list-unstyled">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">References</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content ">
+        <iframe class="player" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/504978123&color=%23c1bcb4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
+    <div class="bottom-bar">
+        <footer class="bar bottom">
+            <div class="footer-group">
+                <ul class="list-unstyled">
+                    <li><a href="">AGB</a></li>
+                    <li><a href="">Datenschutz</a></li>
+                    <li><a href="">Impressum</a></li>
+                </ul>
+                <div class="contact">
+                    <p>contact
+                        <a href="mailto:info@sturmsounds.com">info@sturmsounds.com</a>
+                    </p>
+                </div>
 
-        </div>
-    </footer>
-
+            </div>
+        </footer>
+    </div>
 
 
 <script src="dist/js/vendor/jquery.min.js"></script>
 <script src="dist/js/vendor/bootstrap.min.js"></script>
+<!--<script src="dist/js/vendor/soundcloud.player.api.js"></script>-->
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+<script src="dist/js/all.js"></script>
+
 </body>
 </html>
