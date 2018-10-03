@@ -70,8 +70,7 @@ gulp.task( 'js', function () {
 
     gulp.src([
         vendorDir + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
-        vendorDir + 'jquery/dist/jquery.min.js',
-        vendorDir + 'soundcloud/soundcloud.player.api.js'
+        vendorDir + 'jquery/dist/jquery.min.js'
     ])
         .pipe( gulp.dest( distDir + 'js/vendor' ) );
 
