@@ -124,22 +124,27 @@ a{
 
 .content{
   position: relative;
-
+  height: 100%;
+  width: 100%;
 
   iframe.player{
     width: 30%;
     position: absolute;
-    top: 30em;
-    left: 70em;
+    top: 35%;
+    left: 50%;
+    background-color: transparent;
+
+    @media (min-width: 768px){
+      width: 40%;
+      top: 35%;
+
+    }
+
+    @media (min-width: 1199px){
+      left: 50em;
+    }
 
 
   }
 }
-
-
-
-
-
-
-
 
