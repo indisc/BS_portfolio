@@ -1,13 +1,45 @@
 
 body{
   font-size: 1.4em;
-  font-family: $SansCond;
+  font-family: $ubuntu;
   color: white;
   font-weight: 300;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   h1, h2, h3, h4, h5,h6{
     font-weight: 300;
   }
+  @media (min-width: 320px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (2480 - 300)));
+  }
+
+  @media (min-width: 414px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 414px) / (2480 - 300)));
+  }
+
+  @media (min-width: 768px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 768px) / (2480 - 300)));
+  }
+
+  @media (min-width: 1024px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 1024px) / (2480 - 300)));
+  }
+
+  @media (min-width: 1199px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 1199px) / (2480 - 300)));
+  }
+
+  @media (min-width: 1600px){
+    font-size: calc(16px + (26 - 14) * ((100vw - 1600px) / (2480 - 300)));
+  }
+
+  @media (min-width: 1980px){
+    font-size: calc(14px + (26 - 14) * ((100vw - 1980px) / (2480 - 300)));
+  }
+
+  @media (min-width: 2480px){
+    font-size: calc(14px + (26 - 14) * ((100vw - 2480px) / (2480 - 300)));
+  }
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -41,6 +73,25 @@ a{
   display: flex;
   height: 8vw;
   width: 100%;
+
+  @media (min-width: 320px){
+    height: 59vw;
+  }
+
+  @media (min-width: 414px){
+    height: 16vw;
+  }
+
+  @media (min-width: 768px){
+    height: 16vw;
+  }
+
+  @media (min-width: 1199px){
+    height: 10vw;
+  }
+  @media (min-width: 1980px){
+    height: 8vw;
+  }
 }
 
 .top-bar, .bottom-bar{
@@ -62,13 +113,26 @@ a{
 .bar:first-child{
   justify-content: space-between;
 
+
+
 }
 
 .top{
+
   padding-top: 3em;
   display: flex;
   align-items: flex-end;
   padding-bottom: 1em;
+
+  @media (min-width: 320px){
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 991px){
+    flex-direction: row;
+    align-items: baseline;
+  }
 
   .header-group{
     max-width: 100%;
@@ -77,11 +141,22 @@ a{
       font-size: 1.6em;
       line-height: 1.2em;
 
+      @media (min-width: 991px){
+        font-size: 1.3em;
+      }
     }
   }
 
   .nav-bar{
     padding-right: 3em;
+    @media (min-width: 320px){
+      padding-right: 0;
+      padding-left: 3em;
+    }
+    @media (min-width: 991px){
+      padding-right: 3em;
+      padding-left: 0;
+    }
   }
   .nav-bar > ul{
     display: flex;
@@ -136,12 +211,23 @@ a{
 
     @media (min-width: 768px){
       width: 40%;
-      top: 35%;
-
+      top: 40%;
     }
 
     @media (min-width: 1199px){
-      left: 50em;
+      top: 25%;
+      left: 50%;
+    }
+
+    @media (min-width: 1440px){
+      top: 25%;
+      left: 50%;
+    }
+
+    @media (min-width: 1600px){
+      top: 20%;
+      left: 50%;
+      width: 35%;
     }
 
 
