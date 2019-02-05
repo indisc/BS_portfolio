@@ -2,6 +2,7 @@
 body{
   font-size: 1.4em;
   font-family: $ubuntu;
+
   color: white;
   font-weight: 300;
   //text-transform: uppercase;
@@ -86,12 +87,16 @@ a{
   height: 8vw;
   width: 100%;
 
-  @media (min-width: 320px){
+  @media (max-width: $screen-xs-min){
     height: 44vw;
   }
 
-  @media (min-width: 414px){
-    height: 16vw;
+  @media (max-width: 667px){
+    height: 27vw;
+  }
+
+  @media (max-width: $screen-xs-max){
+    height: 22vw;
   }
 
   @media (min-width: 768px){
@@ -153,8 +158,9 @@ a{
     padding-left: $spa10 * 3;
     padding-bottom: 1.2em;
 
-    @media (min-width: 320px){
-      padding-left: $spa10;
+    @media (max-width: $screen-xs-max){
+      padding-left: 15px;
+      width: 80%;
     }
 
     h1{
@@ -176,9 +182,11 @@ a{
 
   .nav-bar{
     padding-right: 3em;
-    @media (min-width: 220px){
+    padding-left: 3em;
+
+    @media (max-width: $screen-xs-max){
       padding-right: 0;
-      padding-left: $spa10;
+      padding-left: 15px;
     }
     @media (min-width: 991px){
       padding-right: 3em;
@@ -194,35 +202,12 @@ a{
   nav.nav-bar ul{
     li:not(:last-child):after{
       content: " | ";
-      padding-left: $spa05;
-      padding-right: $spa05;
+      padding-left: 0;
+      padding-right: 12px;
     }
   }
 }
 
-.footer-group{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  >ul{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 0;
-
-    li:not(:last-child):after{
-      content: " | ";
-      padding-left: $spa05;
-      padding-right: $spa05;
-    }
-  }
-  .contact{
-    margin-left: $spa10 * 2;
-    display: list-item;
-    list-style-type: disc;
-    color: $white;
-  }
-}
 
 .content{
   position: relative;
@@ -234,18 +219,25 @@ a{
     position: absolute;
     top: 35%;
     left: 50%;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
 
-    @media (min-width: 768px){
-      width: 40%;
-      top: 40%;
+    @media (max-width: $screen-xs-min){
+      height: 11em;
+      top: 45%;
+    }
+
+    @media (max-width: $screen-xs-max){
+      left: 5%;
+      width: 90%;
+      height: 9em;
+      top: 35%;
     }
 
     @media (min-width: 1024px){
       background-color: black;
       opacity: 0.8;
       padding: 1em;
-
       top: 0;
     }
 
@@ -269,3 +261,45 @@ a{
   }
 }
 
+
+
+.footer-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  @media (max-width: $screen-xs-max){
+    flex-direction: column;
+  }
+  >ul{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+
+    @media (max-width: $screen-xs-max){
+      padding-left: 15px;
+      padding-right: 10px;
+      @include flex-row-center;
+    }
+
+    li:not(:last-child):after{
+      content: "|";
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+  .contact{
+    margin-left: $spa10 * 2;
+    display: list-item;
+    list-style-type: disc;
+    color: $white;
+
+    @media (max-width: $screen-xs-max){
+      margin-left: 0;
+      padding-top: 15px;
+      @include flex-row-center;
+
+    }
+  }
+}
