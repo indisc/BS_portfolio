@@ -2,9 +2,9 @@
 body{
   font-size: 1.4em;
   font-family: $ubuntu;
-
   color: white;
   font-weight: 300;
+  line-height: 0;
   //text-transform: uppercase;
   h1, h2, h3, h4, h5,h6{
     font-weight: 300;
@@ -72,6 +72,8 @@ a{
   background-position: 90% 90%;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+  z-index: -1;
 
   @media (max-width: 1024px){
     background-image: url('../img/mobile/header_img_tablet.jpg');
@@ -88,6 +90,8 @@ a{
     background-position: 0 -100px;
   }
 }
+
+
 
 
 .bar{
@@ -112,7 +116,7 @@ a{
   }
 
   @media (max-width: 320px){
-    height: 38vw;
+    height: 35vw;
   }
 
   @media (min-width: 768px){
@@ -149,6 +153,11 @@ a{
   }
   justify-content: space-between;
 
+  @media (min-width: $screen-xs-max){
+
+    align-items: center;
+  }
+
 }
 
 .top{
@@ -169,6 +178,12 @@ a{
     align-items: baseline;
   }
 
+  @media (max-width: $screen-xs-min){
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1em;
+  }
+
   .header-group{
     max-width: 100%;
     padding-left: $spa10 * 3;
@@ -181,14 +196,16 @@ a{
 
     @media (max-width: $screen-xs-min){
       padding-bottom: 0.8em;
+
     }
     @media (max-width: 320px){
       padding-bottom: 5px;
     }
 
-    h1{
+   /* h1{
       font-size: 1.6em;
       line-height: 1.2em;
+      font-weight: 700;
 
 
       @media (min-width: 200px){
@@ -197,11 +214,27 @@ a{
         hyphens: auto;
       }
       @media (max-width: $screen-xs-min){
-        font-size: 1.1em;
+        font-size: 1em;
+        hyphens: none;
       }
 
       @media (min-width: 991px){
         font-size: 1.3em;
+      }
+    }*/
+
+  }
+  @media (max-width: $screen-xs-min){
+    .header-group {
+      h1 {
+        font-size: 1.6em;
+        font-weight: 900;
+      }
+
+      .headline-description {
+        line-height: 15px;
+        font-size: 12px;
+        padding-top: 5px;
       }
     }
   }
@@ -213,6 +246,9 @@ a{
     @media (max-width: $screen-xs-max){
       padding-right: 0;
       padding-left: 15px;
+    }
+    @media (max-width: $screen-xs-min){
+      padding-top: 10px;
     }
     @media (min-width: 991px){
       padding-right: 3em;
@@ -230,13 +266,15 @@ a{
 
     li:not(:last-child):after{
       content: " | ";
-      padding-left: 0;
-      padding-right: 12px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 10px;
     }
     li{
       a{
         @media (max-width: $screen-xs-min){
           font-size: 0.8em;
+          font-weight: 300;
 
         }
       }
@@ -246,9 +284,9 @@ a{
 
 
 .content{
-  position: relative;
+  /*position: relative;
   height: 100%;
-  width: 100%;
+  width: 100%;*/
 
   iframe.player{
     width: 30%;
@@ -264,11 +302,11 @@ a{
       left: 5%;
       width: 90%;
       height: 9em;
-      top: 35%;
+      top: 45%;
     }
     @media (max-width: $screen-xs-min){
       height: 10em;
-      top: 25%;
+      top: 5%;
     }
 
     @media (min-width: 1024px){
@@ -324,6 +362,10 @@ a{
       content: "|";
       padding-left: 8px;
       padding-right: 8px;
+
+      @media (max-width: $screen-xs-min){
+        font-size: 10px;
+      }
     }
     li{
       @media (max-width: $screen-xs-min){
@@ -346,8 +388,12 @@ a{
       @include flex-row-center;
     }
     @media (max-width: $screen-xs-min){
+      padding-top: 15px;
+    }
+    @media (max-width: $screen-xs-min){
       p{
         font-size: 0.8em;
+
       }
     }
   }
