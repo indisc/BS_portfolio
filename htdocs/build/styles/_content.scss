@@ -67,7 +67,7 @@ a{
 }
 
 .background-portfolio{
-  background-image: url('../img/Startbild.png');
+  background-image: url('../img/start-teaser.jpg');
   background-size: cover;
   background-position: 90% 90%;
   background-repeat: no-repeat;
@@ -88,6 +88,7 @@ a{
   }
   @media (max-width: 375px){
     background-position: 0 -100px;
+    height: 80vh;
   }
 }
 
@@ -306,7 +307,7 @@ a{
     }
     @media (max-width: $screen-xs-min){
       height: 10em;
-      top: 5%;
+      top: 25%;
     }
 
     @media (min-width: 1024px){
