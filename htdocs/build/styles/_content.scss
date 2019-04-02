@@ -85,7 +85,12 @@ a{
     background-image: url('../img/mobile/header_img_ph.jpg');
   }
   @media (max-width: 375px){
-    background-position: 0 -100px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -268,7 +273,8 @@ a{
     }
     @media (max-width: $screen-xs-min){
       height: 10em;
-      top: 25%;
+      top: 35%;
+      margin: 0;
     }
 
     @media (min-width: 1024px){
