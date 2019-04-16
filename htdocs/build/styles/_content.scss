@@ -75,7 +75,7 @@ a{
 
   @media (max-width: 1024px){
     background-image: url('../img/mobile/header_img_tablet.jpg');
-    background-position: 90% 35%;
+    background-position: 90% 65%;
   }
   @media (max-width: 768px){
     background-image: url('../img/mobile/header_img_tablet_landscape.jpg');
@@ -124,8 +124,16 @@ a{
     height: 16vw;
   }
 
+  @media (min-width: 991px){
+    height: 11vw;
+  }
+
+  @media (min-width: 1024px){
+    height: 9vw;
+  }
+
   @media (min-width: 1199px){
-    height: 10vw;
+    height: 8vw;
   }
   @media (min-width: 1980px){
     height: 8vw;
@@ -154,6 +162,10 @@ a{
   }
   justify-content: space-between;
 
+  @media (min-width: 991px){
+    display: flex;
+    align-items: center;
+  }
 }
 
 .top{
@@ -189,6 +201,10 @@ a{
     }
     @media (max-width: 320px){
       padding-bottom: 5px;
+    }
+
+    @media (min-width: 991px){
+      padding-bottom: 0;
     }
 
     h1{
@@ -276,12 +292,20 @@ a{
       top: 35%;
       margin: 0;
     }
+    @media (min-width: $screen-sm){
+      width: 70%;
+      left: 15%;
+      height: 165px;
+
+    }
 
     @media (min-width: 1024px){
       background-color: black;
       opacity: 0.8;
       padding: 1em;
-      top: 0;
+      top: 28%;
+      left: 22%;
+      height: 170px;
     }
 
     @media (min-width: 1199px){
