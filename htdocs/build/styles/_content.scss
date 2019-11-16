@@ -67,11 +67,16 @@ a{
 }
 
 .background-portfolio{
+  position: relative;
   background-image: url('../img/Startbild.png');
   background-size: cover;
   background-position: 90% 90%;
   background-repeat: no-repeat;
   height: 100vh;
+  
+  @media (max-width: 1440px){
+    background-position: 0% 90%;
+  }
 
   @media (max-width: 1024px){
     background-image: url('../img/mobile/header_img_tablet.jpg');
@@ -83,6 +88,7 @@ a{
   }
   @media (max-width: 414px){
     background-image: url('../img/mobile/header_img_ph.jpg');
+    background-position: 100% 100%;
   }
   @media (max-width: 375px){
     background-position: center;
@@ -113,11 +119,14 @@ a{
   }
 
   @media (max-width: 420px){
-    height: 41vw;
+    height: 30vw;
   }
 
-  @media (max-width: 320px){
+  @media (max-width: 351px){
     height: 38vw;
+  }
+  @media (max-width: 320px){
+    height: 30vw;
   }
 
   @media (min-width: 768px){
@@ -157,10 +166,13 @@ a{
 
 
 .bar:first-child{
+  justify-content: space-between;
   @media (max-width: 767px){
     justify-content: start;
   }
-  justify-content: space-between;
+  @media (max-width: 319px){
+    flex-direction: column;
+  }
 
   @media (min-width: 991px){
     display: flex;
@@ -192,15 +204,21 @@ a{
     padding-bottom: 1.2em;
 
     @media (max-width: $screen-xs-max){
-      padding-left: 15px;
+      padding-left: 3em;
       width: 80%;
+    }
+
+    @media (max-width: 567px){
+      width: 100%;
     }
 
     @media (max-width: $screen-xs-min){
       padding-bottom: 0.8em;
+      padding-left: 1.5em;
     }
     @media (max-width: 320px){
       padding-bottom: 5px;
+      padding-left: 0.5em;
     }
 
     @media (min-width: 991px){
@@ -214,11 +232,19 @@ a{
 
       @media (min-width: 200px){
         letter-spacing: -0.03em;
-        font-size: 1.1em;
+        font-size: 1.3em;
         hyphens: auto;
       }
       @media (max-width: $screen-xs-min){
         font-size: 1.1em;
+      }
+
+      @media (max-width: 355px){
+        font-size: 1em;
+      }
+
+      @media (max-width: 320px){
+        padding-left: 0.5em;
       }
 
       @media (min-width: 991px){
@@ -233,7 +259,10 @@ a{
 
     @media (max-width: $screen-xs-max){
       padding-right: 0;
-      padding-left: 15px;
+      padding-left: 3em;
+    }
+    @media (max-width: $screen-xs-min) {
+      padding-left: 1.5em;
     }
     @media (min-width: 991px){
       padding-right: 3em;
@@ -267,9 +296,12 @@ a{
 
 
 .content{
-  position: relative;
+  /*
   height: 100%;
   width: 100%;
+  z-index: 0;
+
+   */
 
   iframe.player{
     width: 30%;
@@ -287,10 +319,17 @@ a{
       height: 9em;
       top: 35%;
     }
+
+    @media (max-width: 525px){
+      height: 10em;
+    }
     @media (max-width: $screen-xs-min){
       height: 10em;
-      top: 35%;
+      top: 65%;
       margin: 0;
+    }
+    @media (max-width: 375px){
+      top: 50%;
     }
     @media (min-width: $screen-sm){
       width: 70%;
@@ -311,17 +350,19 @@ a{
     @media (min-width: 1199px){
       top: 25%;
       left: 50%;
+      width: 45%;
     }
 
     @media (min-width: 1440px){
       top: 25%;
       left: 50%;
+      
     }
 
     @media (min-width: 1600px){
       top: 20%;
       left: 50%;
-      width: 35%;
+      width: 45%;
     }
 
 

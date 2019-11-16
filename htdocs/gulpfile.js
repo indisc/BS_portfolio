@@ -8,6 +8,7 @@ var imagemin		= require('gulp-imagemin');
 // var livereload = require('gulp-livereload');
 var browserSync		= require('browser-sync');
 var connect = require('gulp-connect');
+var sourcemaps = require('gulp-sourcemaps');
 
 var buildDir    = 'build/';
 var vendorDir   = './build/vendor/';
@@ -43,6 +44,7 @@ gulp.task('styles', function () {
         precss,
     ];
     gulp.src(scssDir + '*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: [
                 vendorDir + 'bootstrap-sass/assets/stylesheets',
@@ -51,8 +53,11 @@ gulp.task('styles', function () {
             sourceMaps: 'sass',
             outputStyle: 'compressed'
         }).on('error', sass.logError))
+
+        .pipe(sourcemaps.write())
         .pipe(postcss(processors))
         .pipe(concat('styles.min.css'))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(distDir + 'css'))
         //.pipe(livereload());
         .pipe(reload({stream:true}))
