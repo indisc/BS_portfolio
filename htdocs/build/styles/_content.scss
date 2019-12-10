@@ -115,7 +115,7 @@ a{
   }
 
   @media (max-width: 520px){
-    height: 30vw;
+    height: 26vw;
   }
 
   @media (max-width: 420px){
@@ -296,12 +296,6 @@ a{
 
 
 .content{
-  /*
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-
-   */
 
   iframe.player{
     width: 30%;
@@ -316,35 +310,34 @@ a{
     @media (max-width: $screen-xs-max){
       left: 5%;
       width: 90%;
-      height: 9em;
+      height: 300px;
       top: 35%;
     }
 
     @media (max-width: 525px){
-      height: 10em;
+      height: 300px;
     }
     @media (max-width: $screen-xs-min){
-      height: 10em;
-      top: 65%;
+      height: 300px;
+      top: 40%;
       margin: 0;
     }
     @media (max-width: 375px){
-      top: 50%;
+      top: 30%;
     }
     @media (min-width: $screen-sm){
       width: 70%;
       left: 15%;
-      height: 165px;
-
+      height: 300px;
     }
 
     @media (min-width: 1024px){
-      background-color: black;
+      background-color: rgba(0,0,0,0.6);
       opacity: 0.8;
       padding: 1em;
       top: 28%;
       left: 22%;
-      height: 170px;
+
     }
 
     @media (min-width: 1199px){
