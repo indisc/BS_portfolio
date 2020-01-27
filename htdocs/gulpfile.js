@@ -13,6 +13,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var buildDir    = 'build/';
 var vendorDir   = './build/vendor/';
 var imageDir    = './build/img/';
+var fontsDir    = './build/fonts/';
 var scssDir     = './build/styles/';
 var scssboots   = './build/vendor/'
 var jsDir       = './build/js/';
@@ -95,6 +96,12 @@ gulp.task('html', function () {
 
 
 // images
+gulp.task('fonts', function(){
+    return gulp.src([ fontsDir + '**/*.{eot,woff2,woff,ttf}'])
+        .pipe(gulp.dest(distDir + 'fonts/'))
+})
+
+// images
 gulp.task('images', function(){
     return gulp.src([ imageDir + '**/*.{png,jpg,gif,svg}'])
         .pipe(imagemin({
@@ -111,5 +118,5 @@ gulp.task('watch', function () {
     gulp.watch('htdocs/*.html', ['html']);
 })
 
-gulp.task('default', ['styles', 'js', 'watch', 'images', 'browser-sync']);
+gulp.task('default', ['styles', 'js', 'watch', 'images', 'fonts', 'browser-sync']);
 
