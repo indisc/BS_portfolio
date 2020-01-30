@@ -98,7 +98,7 @@
     }
     @media (max-width: $screen-xs-min) {
       //display: none;
-      height: 286px;
+      height: 240px;
       padding: 2px;
       top: 67%;
       margin: 0;
@@ -109,7 +109,7 @@
     @media (max-width: 414px) {
       top: 45%;
       width: 80%;
-      left: 10;
+      left: 10%;
 
       .to_down_320 {
         height: auto;
@@ -118,7 +118,7 @@
 
     /* iphone 6,7,8 normal Iphone X*/
     @media (max-width: 375px) {
-      top: 26%;
+      top: 32%;
       background-color: rgba(0,0,0,0.6);
       opacity: 0.8;
     }
@@ -135,8 +135,8 @@
     /* ihpone4 iphone5 */
     @media (max-width: 320px) {
       top: 30%;
-      width: 90%;
-      height: 240px;
+      width: 80%;
+      height: 220px;
     }
     @media (min-width: $screen-sm) {
       width: 50%;

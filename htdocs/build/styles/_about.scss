@@ -1,0 +1,84 @@
+.background-about{
+  background-color: $black;
+
+  @media (max-width: 320px){
+    .bar.top{
+      height: 27vw;
+    }
+  }
+}
+
+
+
+.content-about{
+  background-color: $black;
+  padding: 0 20px;
+  padding-top: 10px;
+  @media (min-width: 320px){
+    padding: 0 10px;
+    padding-top: 0px;
+  }
+
+  @media (min-width: 375px){
+    padding: 0 20px;
+    padding-top: 6px;
+  }
+  // ihpone x
+  @media only screen and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (min--moz-device-pixel-ratio: 3),
+  only screen and (-o-min-device-pixel-ratio: 3/1),
+  only screen and (min-device-pixel-ratio: 3),
+  only screen and (min-resolution: 458dpi),
+  only screen and (min-resolution: 3dppx){
+    padding: 0 20px;
+    padding-top: 10px;
+  }
+
+  p{
+    font-size: 0.75em;
+    font-weight: 400;
+    color: $color-grey;
+    line-height: 10px;
+    @media (min-width: 320px){
+      margin-bottom: 4px;
+      line-height: 10px;
+    }
+    @media (min-width: 375px){
+      margin-bottom: 5px;
+    }
+    // ihpone x
+    @media only screen and (-webkit-min-device-pixel-ratio: 3),
+    only screen and (min--moz-device-pixel-ratio: 3),
+    only screen and (-o-min-device-pixel-ratio: 3/1),
+    only screen and (min-device-pixel-ratio: 3),
+    only screen and (min-resolution: 458dpi),
+    only screen and (min-resolution: 3dppx){
+      margin-bottom: 10px;
+    }
+
+    &:last-child{
+      padding-top: 10px;
+      padding-bottom: 25px;
+      @media (min-width: 320px){
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+      @media (min-width: 375px){
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+      // ihpone x
+      @media only screen and (-webkit-min-device-pixel-ratio: 3),
+      only screen and (min--moz-device-pixel-ratio: 3),
+      only screen and (-o-min-device-pixel-ratio: 3/1),
+      only screen and (min-device-pixel-ratio: 3),
+      only screen and (min-resolution: 458dpi),
+      only screen and (min-resolution: 3dppx){
+        padding-top: 10px;
+        padding-bottom: 25px;
+      }
+    }
+
+
+  }
+}

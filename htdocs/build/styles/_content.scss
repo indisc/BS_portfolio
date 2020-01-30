@@ -124,7 +124,7 @@ a{
   @media (max-width: 320px){
 
     background-image: url('../img/mobile/iphone_portrait_start_small.png');
-    background-position: center 242%;
+    background-position: center 220%;
     background-size: 100%;
   }
 
@@ -201,7 +201,8 @@ footer.bar{
   position: relative;
 }
 
-.top-bar .bar{
+.background-portfolio-music .top-bar .bar,
+.background-portfolio .top-bar .bar{
   position: fixed;
   top: 0;
 }
@@ -289,7 +290,7 @@ footer.bar{
         hyphens: auto;
       }
       @media (max-width: $screen-xs-min){
-        font-size: 10vw;
+        font-size: 8vw;
       }
 
       @media (max-width: 355px){
@@ -297,7 +298,7 @@ footer.bar{
       }
 
       @media (max-width: 320px){
-        font-size: 9.8vw;
+        font-size: 8vw;
       }
 
       @media (min-width: 991px){
@@ -307,7 +308,7 @@ footer.bar{
     h2{
       @extend h1;
       @media (max-width: $screen-xs-min){
-        font-size: 5vw;
+        font-size: 4vw;
         padding-bottom: 6px;
       }
     }
@@ -355,7 +356,7 @@ footer.bar{
         color: $third-active;
         letter-spacing: 0.03em;
         @media (max-width: $screen-xs-min){
-          font-size: 1em;
+          font-size: 0.9em;
         }
       }
     }
@@ -390,24 +391,18 @@ footer.bar{
       height: 300px;
     }
     @media (max-width: $screen-xs-min) {
-      //display: none;
       height: 135px;
       padding: 2px;
-      top: 67%;
+      top: 70%;
       margin: 0;
 
     }
     @media (max-width: 414px) {
-      //background-color: transparent;
-
       .to_down_320 {
         height: auto;
       }
     }
 
-    @media (max-width: 375px) {
-      top: 67%;
-    }
     @media only screen and (-webkit-min-device-pixel-ratio: 3),
     only screen and (min--moz-device-pixel-ratio: 3),
     only screen and (-o-min-device-pixel-ratio: 3/1),
@@ -418,8 +413,14 @@ footer.bar{
     }
 
 
+    @media (max-width: 375px) {
+      top: 70%;
+    }
+
+
+
     @media (max-width: 320px) {
-      top: 62%
+      top: 67%
     }
     @media (min-width: $screen-sm) {
       width: 50%;
@@ -435,7 +436,7 @@ footer.bar{
       width: 50%;
       top: 12%;
       left: 47%;
-      height: 280px;
+      height: 223px;
       position: fixed;
     }
 
@@ -455,6 +456,11 @@ footer.bar{
       top: 20%;
       left: 50%;
       width: 45%;
+    }
+  }
+  iframe.play_start{
+    @media (max-width: 320px){
+      height: 160px;
     }
   }
 }
@@ -510,10 +516,11 @@ footer.bar{
       padding-top: 0;
       text-align: center;
       p{
-        line-height: 1.4em;
+        line-height: 10px;
         font-size: 0.8em;
         margin: 0;
       }
     }
   }
 }
+
