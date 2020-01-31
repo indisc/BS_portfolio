@@ -1,11 +1,16 @@
 .background-about{
   background-color: $black;
 
+  @media (min-width: 414px){
+    width: 101%;
+  }
+
   @media (max-width: 320px){
     .bar.top{
       height: 27vw;
     }
   }
+
 }
 
 
@@ -33,6 +38,9 @@
     padding: 0 20px;
     padding-top: 10px;
   }
+  @media (min-width: 414px){
+    padding-top: 20px;
+  }
 
   p{
     font-size: 0.75em;
@@ -56,6 +64,12 @@
       margin-bottom: 10px;
     }
 
+    @media (min-width: 414px){
+      font-size: 1.4em;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
     &:last-child{
       padding-top: 10px;
       padding-bottom: 25px;
@@ -76,6 +90,11 @@
       only screen and (min-resolution: 3dppx){
         padding-top: 10px;
         padding-bottom: 25px;
+      }
+
+      @media (min-width: 414px){
+        padding-top: 15px;
+        padding-bottom: 30px;
       }
     }
 
