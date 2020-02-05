@@ -1,0 +1,22 @@
+
+picture.to_991{
+  @media (max-width: 991px){
+    display: block;
+  }
+
+  @media (min-width: 991px){
+    display: none;
+  }
+
+}
+
+picture.up_991{
+
+  @media (min-width: 1px){
+    display: none;
+  }
+
+  @media (min-width: 991px){
+    display: block;
+  }
+}

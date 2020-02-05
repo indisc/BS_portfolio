@@ -28,6 +28,10 @@
     padding: 0 20px;
     padding-top: 6px;
   }
+
+  @media (min-width: 414px){
+    padding-top: 20px;
+  }
   // ihpone x
   @media only screen and (-webkit-min-device-pixel-ratio: 3),
   only screen and (min--moz-device-pixel-ratio: 3),
@@ -38,15 +42,54 @@
     padding: 0 20px;
     padding-top: 10px;
   }
-  @media (min-width: 414px){
-    padding-top: 20px;
+
+  // ihpone 6,7,8
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait) {
+    padding-top: 0px;
   }
+
+  // iphone 6,7,8 plus
+  @media only screen
+  and (min-device-width : 414px)
+  and (max-device-width : 736px)
+  and (orientation : portrait) {
+    padding-top: 0px;
+  }
+
+  // iphone xr
+  @media only screen
+  and (device-width : 414px)
+  and (device-height : 896px)
+  and (-webkit-device-pixel-ratio : 2){
+    padding-top: 0px;
+  }
+
+  //iphone xs
+  @media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3){
+    padding-top: 0px;
+  }
+
+  //iphone xs max
+  @media only screen
+  and (device-width : 414px)
+  and (device-height : 896px)
+  and (-webkit-device-pixel-ratio : 3){
+    padding-top: 0px;
+  }
+
+
 
   p{
     font-size: 0.75em;
     font-weight: 400;
     color: $color-grey;
-    line-height: 10px;
+    line-height: 0px;
     @media (min-width: 320px){
       margin-bottom: 4px;
       line-height: 10px;
@@ -54,6 +97,33 @@
     @media (min-width: 375px){
       margin-bottom: 5px;
     }
+
+    @media (min-width: 414px){
+      font-size: 1.4em;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    // ihpone 6,7,8
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (orientation : portrait) {
+      font-size: 0.8em;
+      line-height: 12px;
+      margin-bottom: 5px;
+    }
+
+    // iphone 6,7,8 plus
+    @media only screen
+    and (min-device-width : 414px)
+    and (max-device-width : 736px)
+    and (orientation : portrait) {
+      font-size: 0.8em;
+      line-height: 12px;
+      margin-bottom: 5px;
+    }
+
     // ihpone x
     @media only screen and (-webkit-min-device-pixel-ratio: 3),
     only screen and (min--moz-device-pixel-ratio: 3),
@@ -64,11 +134,71 @@
       margin-bottom: 10px;
     }
 
-    @media (min-width: 414px){
-      font-size: 1.4em;
-      line-height: 20px;
-      margin-bottom: 10px;
+    // iphone xr
+    @media only screen
+    and (device-width : 414px)
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 2){
+      line-height: 15px;
+      font-size: 1em;
+      margin-bottom: 5px;
     }
+
+    //iphone xs
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3){
+      line-height: 15px;
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+
+    //iphone xs max
+    @media only screen
+    and (device-width : 414px)
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 3){
+      line-height: 15px;
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+
+    // ipad normal
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+      line-height: 15px;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+    // ipad 2,3
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape)
+    and (-webkit-min-device-pixel-ratio: 1)  {
+      line-height: 15px;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+
+
+    // ipad 3,4
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      line-height: 15px;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+
 
     &:last-child{
       padding-top: 10px;
@@ -81,6 +211,12 @@
         padding-top: 5px;
         padding-bottom: 10px;
       }
+
+      @media (min-width: 414px){
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
+
       // ihpone x
       @media only screen and (-webkit-min-device-pixel-ratio: 3),
       only screen and (min--moz-device-pixel-ratio: 3),
@@ -92,12 +228,83 @@
         padding-bottom: 25px;
       }
 
-      @media (min-width: 414px){
-        padding-top: 15px;
-        padding-bottom: 30px;
+      // ihpone 6,7,8
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px)
+      and (orientation : portrait) {
+        padding-top: 5px;
+        padding-bottom: 20px;
       }
+
+      // iphone 6,7,8 plus
+      @media only screen
+      and (min-device-width : 414px)
+      and (max-device-width : 736px)
+      and (orientation : portrait) {
+        padding-top: 5px;
+        padding-bottom: 20px;
+      }
+
+      // iphone xr
+      @media only screen
+      and (device-width : 414px)
+      and (device-height : 896px)
+      and (-webkit-device-pixel-ratio : 2){
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
+      //iphone xs
+      @media only screen
+      and (device-width : 375px)
+      and (device-height : 812px)
+      and (-webkit-device-pixel-ratio : 3){
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
+      //iphone xs max
+      @media only screen
+      and (device-width : 414px)
+      and (device-height : 896px)
+      and (-webkit-device-pixel-ratio : 3){
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
+      // ipad normal
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape) {
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
+      // ipad 2,3
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape)
+      and (-webkit-min-device-pixel-ratio: 1)  {
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
+
+
+      // ipad 3,4
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        padding-top: 15px;
+        padding-bottom: 20px;
+      }
+
     }
-
-
   }
 }
+

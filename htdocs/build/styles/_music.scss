@@ -10,6 +10,12 @@
     background-position: 0% 90%;
   }
 
+  @media only screen and (max-width: 1024px){
+    background-image: url('../img/mobile/ipad_landscp_music.png');
+    background-position: center 30%;
+    background-size: 105%;
+  }
+
   @media (max-width: 991px){
     background-image: url('../img/mobile/ipad_portrait_music.jpg');
     background-position: center 45%;
@@ -75,6 +81,35 @@
     background-position: center 59%;
     background-size: 100%;
   }
+
+  // iphone xr
+  @media only screen
+  and (device-width : 414px)
+  and (device-height : 896px)
+  and (-webkit-device-pixel-ratio : 2){
+    background-position: center 35%;
+    background-size: 106%;
+  }
+
+  //iphone xs
+  @media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3){
+    background-position: center 35%;
+    background-size: 106%;
+  }
+
+  //iphone xs max
+  @media only screen
+  and (device-width : 414px)
+  and (device-height : 896px)
+  and (-webkit-device-pixel-ratio : 3){
+    background-position: center 35%;
+    background-size: 106%;
+  }
+
+
 
 }
 
@@ -150,6 +185,30 @@
       top: 30%;
     }
 
+    // iphone xr
+    @media only screen
+    and (device-width : 414px)
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 2){
+      top: 33%;
+    }
+
+    //iphone xs
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3){
+      top: 33%;
+    }
+
+    //iphone xs max
+    @media only screen
+    and (device-width : 414px)
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 3){
+      top: 33%;
+    }
+
 
     /* ihpone4 iphone5 */
     @media (max-width: 320px) {
@@ -170,9 +229,10 @@
       opacity: 0.8;
       padding: 10px;
       width: 50%;
-      top: 12%;
-      left: 47%;
+      top: 32%;
+      left: 43%;
       position: fixed;
+      height: 38%;
     }
 
     @media (min-width: 1199px) {

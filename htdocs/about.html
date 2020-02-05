@@ -55,7 +55,7 @@
         </p>
         <p>
             I´m a freelancer, my clients are music agents, animation
-            studios, games develpoer.
+            studios, games developer.
         </p>
         <p>
             Contact me via skype, phone or mail.
@@ -64,22 +64,29 @@
             Ben
         </p>
     </div>
-    <div class="img-group">
-        <!--<img src="dist/img/mobile/iphone_about320.jpg" class="img-responsive" alt="">-->
+    <div class="img-group ">
+        <picture class="to_991">
 
-        <img src="dist/img/mobile/iphone_about320.jpg"
-            srcset="dist/img/mobile/iphone_about320.jpg 320w,
-                    dist/img/mobile/iphone_about_375.jpg 375w,
-                    dist/img/mobile/iphone_about_414.jpg 414w,
-                    dist/img/mobile/ipad_portrait_about.jpg 991w,
-                    "
-             sizes = "(max-width: 320px) 320px,
-                        (max-width: 375px) 375px,
-                        (max-width: 414px) 414px,
-                        (max-width: 991px) 991px,
-                        100vw"
-                     alt="">
+            <source srcset="dist/img/mobile/iphone_about320.jpg" media="(max-width: 320px)">
+            <source srcset="dist/img/mobile/iphone_about_375.jpg" media="(max-width: 375px)">
+            <source srcset="dist/img/mobile/iphone_about_414.jpg" media="(max-width: 414px)">
+            <source srcset="dist/img/mobile/ipad_portrait_about.jpg" media="(max-width: 991px)">
+
+            <img srcset="dist/img/mobile/iphone_about320.jpg" alt="">
+        </picture>
+
+        <picture class="up_991">
+
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 991px)">
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1024px)">
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1199px)">
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1440px)">
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1660px)">
+
+            <img srcset="dist/img/mobile/ipad_landscp_about.png" alt="">
+        </picture>
     </div>
+
     <div class="bottom-bar">
         <footer class="bar bottom">
             <div class="footer-group">
