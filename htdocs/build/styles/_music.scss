@@ -6,9 +6,56 @@
   background-repeat: no-repeat;
   height: 100vh;
 
-  @media (max-width: 1440px){
-    background-position: 0% 90%;
+
+  /*
+
+    @media (min-height: 807px) and (min-width: 1024px){
+      background-image: url('../img/mobile/music_laptop_only.png');
+      background-position: center 50%;
+      background-size: 100%;
+    }
+
+    @media (min-height: 946px) and (min-width: 1024px){
+      background-image: url('../img/mobile/music_laptop_only.png');
+      background-position: center 50%;
+      background-size: 100%;
+    }
+  */
+
+
+  @media (min-height: 766px) and (min-width: 1440px){
+    background-image: url('../img/mobile/music_laptop_only.png');
+    background-position: center 50%;
+    background-size: 100%;
   }
+
+  @media (min-height: 807px) and (max-width: 1660px){
+    background-image: url('../img/mobile/music_desk_1660.png');
+    background-position: center 50%;
+    background-size: 108%;
+  }
+
+  @media (min-height: 850px) and (max-width: 1440px){
+    background-image: url('../img/mobile/music_desk_1660.png');
+    background-position: center 50%;
+    background-size: 113%;
+  }
+
+
+  @media (max-width: 1199px){
+    background-image: url('../img/mobile/music_laptop_1024.png');
+    background-position: 20% 50%;
+    background-size: calc(100% * 1.08);
+    /* 108*/
+  }
+
+
+
+
+
+
+
+
 
   @media only screen and (max-width: 1024px){
     background-image: url('../img/mobile/ipad_landscp_music.png');
@@ -115,6 +162,10 @@
 
 
 .content{
+
+  @media (min-height: 766px) and (min-width: 1440px){
+    position: relative;
+  }
 
   iframe.player_music {
     width: 30%;
@@ -229,28 +280,43 @@
       opacity: 0.8;
       padding: 10px;
       width: 50%;
-      top: 32%;
-      left: 43%;
+      top: 37%;
+      left: 46%;
       position: fixed;
-      height: 38%;
+      height: 26.5%;
     }
 
     @media (min-width: 1199px) {
-      top: 25%;
-      left: 50%;
-      width: 45%;
+      width: 50%;
+      top: 37.5%;
+      left: 46%;
     }
 
-    @media (min-width: 1440px) {
-      top: 25%;
-      left: 50%;
 
+
+    @media (min-height: 766px) and (min-width: 1440px){
+      top: 274px;
+      position: absolute;
+      height: 244px;
+      left: 50%;
+      width: 42%;
     }
+
+
+    @media (min-height: 780px) and(min-width: 1440px) {
+      width: 50%;
+      top: 37.5%;
+      left: 46%;
+      position: fixed;
+    }
+
+
+
 
     @media (min-width: 1600px) {
-      top: 20%;
-      left: 50%;
-      width: 45%;
+      width: 50%;
+      top: 37.5%;
+      left: 46%;
     }
   }
 }

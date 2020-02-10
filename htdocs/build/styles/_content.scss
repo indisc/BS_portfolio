@@ -2,7 +2,9 @@
 body{
   font-size: 1.4em;
   font-family: $ubuntu;
-  background-color: $black;
+  @media (max-width: 1024px){
+    background-color: $black;
+  }
 
   color: $color-grey;
   font-weight: 300;
@@ -75,9 +77,61 @@ a{
   background-repeat: no-repeat;
   height: 100vh;
 
-  @media (max-width: 1440px){
-    background-position: 0% 90%;
+
+  @media (min-height: 807px) and (min-width: 1024px){
+    background-image: url('../img/mobile/startbild_laptop_1024.png');
+    background-position: center 50%;
+    background-size: 100%;
   }
+
+  @media (min-height: 946px) and (min-width: 1024px){
+    background-image: url('../img/mobile/startbild_laptop_1024.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+  @media (min-height: 807px) and (min-width: 1199px){
+    background-image: url('../img/mobile/start_desk_1660.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+
+  @media (min-height: 766px) and (min-width: 1440px){
+    background-image: url('../img/mobile/startbild_laptop.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+
+  @media (min-height: 807px) and (min-width: 1440px){
+    background-image: url('../img/mobile/start_desk_1660.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+  @media (min-height: 850px) and (min-width: 1440px){
+    background-image: url('../img/mobile/startbild_laptop_1.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+  @media (min-height: 807px) and (min-width: 1660px){
+    background-image: url('../img/mobile/start_desk_1660.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+
+
+
+  @media (max-width: 1024px){
+    background-image: url('../img/mobile/ipad_portrait_start.jpg');
+    background-position: center 40%;
+    background-size: contain;
+  }
+
+
   @media (max-width: 768px){
     background-image: url('../img/mobile/ipad_portrait_start.jpg');
     background-position: center 40%;
@@ -261,11 +315,11 @@ a{
   }
 
   @media (min-width: 1024px){
-    height: 9vw;
+    height: 11vw;
   }
 
   @media (min-width: 1199px){
-    height: 8vw;
+    height: 10vw;
   }
   @media (min-width: 1980px){
     height: 8vw;
@@ -470,6 +524,9 @@ footer.bar{
       @media (min-width: 991px){
         font-size: 2.2em;
       }
+      @media (min-width: 1199px){
+        font-size: 2.5em;
+      }
     }
     h2{
       @extend h1;
@@ -495,6 +552,11 @@ footer.bar{
 
       @media (min-width: 991px){
         font-size: 1.8vw;
+      }
+
+      @media (min-width: 1199px){
+        font-size: 1.6vw;
+        padding-top: 1px;
       }
     }
   }
@@ -639,6 +701,8 @@ footer.bar{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
 
+
+
     @media (max-width: 991px){
       width: 90%;
       left: 5%;
@@ -750,9 +814,10 @@ footer.bar{
       padding: 10px;
       width: 50%;
       top: 12%;
-      left: 47%;
-      height: 223px;
+      left: 58%;
+      height: 150px;
       position: fixed;
+      width: 40%;
     }
 
     // ipad normal
@@ -796,21 +861,28 @@ footer.bar{
     }
 
     @media (min-width: 1199px) {
-      top: 25%;
-      left: 50%;
-      width: 45%;
+      top: 16%;
+      left: 58%;
+      width: 40%;
     }
 
-    @media (min-width: 1440px) {
-      top: 25%;
-      left: 50%;
-
+    @media (min-height: 766px) and (min-width: 1440px){
+      top: 16%;
+      left: 60%;
+      width: 38%;
     }
 
-    @media (min-width: 1600px) {
-      top: 20%;
+    @media (min-height: 807px) and (min-width: 1440px) {
+      top: 19%;
+      left: 65%;
+      width: 35%;
+      height: 150px;
+    }
+
+    @media (min-height: 810px) and (min-width: 1440px) {
+      top: 12%;
       left: 50%;
-      width: 45%;
+      width: 47%;
     }
   }
   iframe.play_start{
@@ -844,6 +916,7 @@ footer.bar{
   @media (max-width: $screen-xs-max){
     flex-direction: column;
   }
+
   >ul{
     display: flex;
     align-items: baseline;
@@ -905,6 +978,11 @@ footer.bar{
         margin: 0;
       }
     }
-  }
+    @media (min-width: 1024px){
+      margin-left: 0;
+      line-height: 10px;
+      font-weight: lighter;
+    }
+  } // .contact
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Ben Sturm - Portfolio</title>
     <meta name="description" content="" />
-    <meta name="author" content="datevid" />
+    <meta name="author" content="ben sturm" />
     <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="" type="text/css" media="screen"/>
@@ -15,6 +15,7 @@
 </head>
 <script>
     // Picture element HTML5 shiv
+    document.createElement( "picture" );
     document.createElement( "picture" );
 </script>
 <script src="dist/js/picturefill.min.js" async></script>
@@ -77,13 +78,13 @@
 
         <picture class="up_991">
 
-            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 991px)">
-            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1024px)">
-            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1199px)">
-            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1440px)">
-            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(min-width: 1660px)">
+            <source srcset="dist/img/mobile/ipad_landscp_about.png" media="(max-width: 1024px)">
+            <source srcset="dist/img/mobile/about_laptop_1024.png" media="(max-width: 1024px)">
+            <source srcset="dist/img/mobile/about_laptop.png" media="(max-width: 1199px)">
+            <source srcset="dist/img/mobile/about_laptop_1440.png" media="(max-width: 1440px)">
+            <source srcset="dist/img/mobile/about_laptop.png" media="(max-width: 1660px)">
 
-            <img srcset="dist/img/mobile/ipad_landscp_about.png" alt="">
+            <img srcset="dist/img/mobile/about_laptop.png" class="img-responsive" alt="">
         </picture>
     </div>
 
