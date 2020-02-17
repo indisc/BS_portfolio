@@ -5,12 +5,59 @@
     width: 101%;
   }
 
+  @media (min-width: 1440px){
+    width: 100%;
+  }
+
   @media (max-width: 320px){
     .bar.top{
       height: 27vw;
     }
   }
 
+}
+
+.about-bg-content:after{
+
+
+  @media (min-width: 1024px){
+    content: "";
+    position: relative;
+    z-index: 0;
+    background-image: url('../img/mobile/about_bg_1024.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 23%;
+    display: block;
+    width: 100%;
+
+  }
+  /* macbookpro without retina */
+  @media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    content: "";
+    background-image: url('../img/mobile/about_laptop.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+    /* macbookpro retina */
+  @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only
+  screen and (min-device-pixel-ratio : 1.5){
+    content: "";
+    background-image: url('../img/mobile/about_laptop.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+
+  @media (min-width: 1441px){
+    content: "";
+    background-image: url('../img/mobile/about_bg_1920.png');
+
+  }
 }
 
 
@@ -83,9 +130,15 @@
     padding-top: 0px;
   }
 
+  @media (min-width: 1024px){
+    padding-left: 3em;
+  }
+
   @media (min-height: 766px) and (min-width: 1440px){
     padding-top: 10px;
   }
+
+
 
 
 
@@ -203,11 +256,22 @@
     }
 
     @media (min-height: 766px) and (min-width: 1440px){
-      font-size: 1.1em;
-      line-height: 15px;
+      font-size: 1em;
+      line-height: 20px;
       margin-bottom: 5px;
-
     }
+
+    @media (min-height: 766px) and (min-width: 1440px){
+      font-size: 1em;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+    @media (min-height: 802px) and (min-width: 1440px){
+      font-size: 1em;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+
 
 
 
@@ -216,7 +280,7 @@
       padding-bottom: 25px;
       @media (min-width: 320px){
         padding-top: 0px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
       }
       @media (min-width: 375px){
         padding-top: 5px;
@@ -319,6 +383,10 @@
       @media (min-height: 766px) and (min-width: 1440px){
         padding-top: 10px;
         padding-bottom: 10px;
+      }
+
+      @media (min-width: 1800px){
+        padding-bottom: 30px;
       }
 
     }

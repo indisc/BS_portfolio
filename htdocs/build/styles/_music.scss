@@ -21,33 +21,52 @@
       background-size: 100%;
     }
   */
-
-
-  @media (min-height: 766px) and (min-width: 1440px){
-    background-image: url('../img/mobile/music_laptop_only.png');
-    background-position: center 50%;
-    background-size: 100%;
+  @media only screen and (min-width: 1024px){
+    background-image: url('../img/mobile/music_laptop_1024.png');
+    background-position: center 30%;
+    background-size: 105%;
   }
 
-  @media (min-height: 807px) and (max-width: 1660px){
-    background-image: url('../img/mobile/music_desk_1660.png');
-    background-position: center 50%;
-    background-size: 108%;
-  }
-
-  @media (min-height: 850px) and (max-width: 1440px){
-    background-image: url('../img/mobile/music_desk_1660.png');
-    background-position: center 50%;
-    background-size: 113%;
-  }
-
-
-  @media (max-width: 1199px){
+  @media (min-width: 1199px){
     background-image: url('../img/mobile/music_laptop_1024.png');
     background-position: 20% 50%;
     background-size: calc(100% * 1.08);
     /* 108*/
   }
+
+
+  @media (min-height: 766px) and (min-width: 1440px){
+    background-image: url('../img/mobile/music_laptop_only.png');
+    background-position: center 50%;
+    background-size: 108%;
+  }
+
+
+  @media (min-height: 850px) and (min-width: 1440px){
+    background-image: url('../img/mobile/music_desk_1660.png');
+    background-position: center 50%;
+    background-size: 113%;
+  }
+
+  @media (min-height: 807px) and (min-width: 1660px){
+    background-image: url('../img/mobile/music_desk_1660.png');
+    background-position: center 50%;
+    background-size: 108%;
+  }
+
+  @media (min-height: 850px) and (min-width: 1660px){
+    background-image: url('../img/mobile/music_desk_1660.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+  @media (min-height: 850px) and (min-width: 1800px){
+    background-image: url('../img/mobile/musik_desk_1800.png');
+    background-position: center 50%;
+    background-size: 100%;
+  }
+
+
 
 
 
@@ -278,7 +297,7 @@
     @media (min-width: 1024px) {
       background-color: rgba(0, 0, 0, 0.6);
       opacity: 0.8;
-      padding: 10px;
+      padding: 5px;
       width: 50%;
       top: 37%;
       left: 46%;
@@ -304,19 +323,20 @@
 
 
     @media (min-height: 780px) and(min-width: 1440px) {
-      width: 50%;
+      width: 37%;
       top: 37.5%;
-      left: 46%;
+      left: 51%;
       position: fixed;
+      height: 235px;
     }
 
 
 
 
     @media (min-width: 1600px) {
-      width: 50%;
-      top: 37.5%;
-      left: 46%;
+      top: 39.5%;
+      width: 33%;
+      height: 240px;
     }
   }
 }

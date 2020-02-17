@@ -81,7 +81,7 @@ a{
   @media (min-height: 807px) and (min-width: 1024px){
     background-image: url('../img/mobile/startbild_laptop_1024.png');
     background-position: center 50%;
-    background-size: 100%;
+    background-size: 104.5%;
   }
 
   @media (min-height: 946px) and (min-width: 1024px){
@@ -93,7 +93,7 @@ a{
   @media (min-height: 807px) and (min-width: 1199px){
     background-image: url('../img/mobile/start_desk_1660.png');
     background-position: center 50%;
-    background-size: 100%;
+    background-size: 108%;
   }
 
 
@@ -111,7 +111,7 @@ a{
   }
 
   @media (min-height: 850px) and (min-width: 1440px){
-    background-image: url('../img/mobile/startbild_laptop_1.png');
+    background-image: url('../img/mobile/start_desk_1660.png');
     background-position: center 50%;
     background-size: 100%;
   }
@@ -321,6 +321,11 @@ a{
   @media (min-width: 1199px){
     height: 10vw;
   }
+
+  @media (min-width: 1441px){
+    height: 8vw;
+  }
+
   @media (min-width: 1980px){
     height: 8vw;
   }
@@ -485,6 +490,11 @@ footer.bar{
       padding-left: 0.8em;
     }
 
+    @media (min-width: 1024px){
+      padding-bottom: 0;
+      padding-left: 3em;
+    }
+
     h1{
       font-size: 1.6em;
       line-height: 1.05em;
@@ -556,6 +566,11 @@ footer.bar{
 
       @media (min-width: 1199px){
         font-size: 1.6vw;
+        padding-top: 1px;
+      }
+
+      @media (min-width: 1440px){
+        font-size: 1.3em;
         padding-top: 1px;
       }
     }
@@ -679,6 +694,10 @@ footer.bar{
 
         @media (max-width: $screen-xs-min){
           font-size: 0.9em;
+        }
+
+        @media (min-width: 1440px){
+          font-size: 1.4em;
         }
       }
     }
@@ -880,9 +899,9 @@ footer.bar{
     }
 
     @media (min-height: 810px) and (min-width: 1440px) {
-      top: 12%;
-      left: 50%;
-      width: 47%;
+      top: 10%;
+      left: 60%;
+      width: 37%;
     }
   }
   iframe.play_start{
