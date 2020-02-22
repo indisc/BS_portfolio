@@ -1,4 +1,8 @@
 
+body,html{
+  height: 100%;
+}
+
 body{
   font-size: 1.4em;
   font-family: $ubuntu;
@@ -12,10 +16,10 @@ body{
   h1, h2, h3, h4, h5,h6{
     font-weight: 300;
   }
-  @media (min-width: 320px){
+  @media (min-width: 300px){
     font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (2480 - 300)));
   }
-
+/*
   @media (min-width: 414px){
     font-size: calc(16px + (26 - 14) * ((100vw - 414px) / (2480 - 300)));
   }
@@ -43,7 +47,7 @@ body{
   @media (min-width: 2480px){
     font-size: calc(14px + (26 - 14) * ((100vw - 2480px) / (2480 - 300)));
   }
-
+*/
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -70,14 +74,13 @@ a{
 }
 
 .background-portfolio{
-  position: relative;
-  background-image: url('../img/Startbild.jpg');
-  background-size: cover;
-  background-position: 90% 90%;
+  background-image: url('../img/mobile/test_start.png');
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: 100%;
 
-
+/*
   @media (min-height: 807px) and (min-width: 1024px){
     background-image: url('../img/mobile/startbild_laptop_1024.png');
     background-position: center 50%;
@@ -273,7 +276,7 @@ a{
     background-size: 100%;
   }
 
-
+*/
 
 } // class background-portfolio
 
@@ -283,7 +286,7 @@ a{
   display: flex;
   height: 8vw;
   width: 100%;
-
+/*
   @media (max-width: $screen-xs-max){
     height: 23vw;
   }
@@ -329,6 +332,8 @@ a{
   @media (min-width: 1980px){
     height: 8vw;
   }
+
+ */
 }
 
 footer.bar{
@@ -496,10 +501,10 @@ footer.bar{
     }
 
     h1{
-      font-size: 1.6em;
+      font-size: 2.5vw;
       line-height: 1.05em;
 
-
+      /*
       @media (min-width: 200px){
         letter-spacing: -0.03em;
         font-size: 1.3em;
@@ -537,16 +542,21 @@ footer.bar{
       @media (min-width: 1199px){
         font-size: 2.5em;
       }
+       */
     }
     h2{
       @extend h1;
+      font-size: 1.1vw;
 
+      /*
       @media (max-width: 991px){
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         font-weight: bolder;
       }
-
+      */
       //ipad portrai
+
+      /*
       @media only screen
       and (max-device-width : 1024px)
       and (min-device-width : 768px)
@@ -573,6 +583,7 @@ footer.bar{
         font-size: 1.3em;
         padding-top: 1px;
       }
+      */
     }
   }
 
@@ -957,6 +968,7 @@ footer.bar{
       padding-right: 8px;
     }
     li{
+      font-size: 1.1vw;
       @media (max-width: $screen-xs-min){
         a{
           font-size: 0.8em;
@@ -969,6 +981,8 @@ footer.bar{
     margin-left: $spa10 * 2;
     color: $white;
     text-align: center;
+    line-height: 0.8vw;
+    font-size: 1.5vw;
 
     @media only screen
     and (max-device-width : 1024px)
@@ -977,7 +991,7 @@ footer.bar{
       line-height: 10px;
       font-size: 1.2em;
     }
-
+  /*
     @media only screen and (max-width: 1024px){
       line-height: 7px;
     }
@@ -1002,6 +1016,7 @@ footer.bar{
       line-height: 10px;
       font-weight: lighter;
     }
+    */
   } // .contact
 }
 
