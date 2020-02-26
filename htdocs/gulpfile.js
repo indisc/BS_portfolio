@@ -3,6 +3,7 @@ var sass            = require("gulp-sass");
 var postcss			= require('gulp-postcss');
 var concat          = require("gulp-concat");
 var autoprefixer	= require('autoprefixer');
+//var browserlist     = require('')
 var precss			= require('precss');
 var imagemin		= require('gulp-imagemin');
 // var livereload = require('gulp-livereload');
@@ -41,11 +42,11 @@ gulp.task('browser-sync', ['styles'], function () {
 
 gulp.task('styles', function () {
     var processors = [
-        autoprefixer,
+        autoprefixer(),
         precss,
     ];
     gulp.src(scssDir + '*.scss')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: [
                 vendorDir + 'bootstrap-sass/assets/stylesheets',
@@ -54,11 +55,10 @@ gulp.task('styles', function () {
             sourceMaps: 'sass',
             outputStyle: 'compressed'
         }).on('error', sass.logError))
-
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(postcss(processors))
         .pipe(concat('styles.min.css'))
-        .pipe(sourcemaps.write('./'))
+        //.pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(distDir + 'css'))
         //.pipe(livereload());
         .pipe(reload({stream:true}))

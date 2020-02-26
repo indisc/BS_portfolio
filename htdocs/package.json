@@ -2,15 +2,16 @@
   "name": "htdocs",
   "version": "1.0.0",
   "description": "schub portfolio",
-  "main": "index.html",
+  "main": "index3.html",
   "scripts": {
     "test": "hallo wold"
   },
   "author": "Nico Lehmann",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.6.1",
@@ -21,5 +22,21 @@
     "gulp-sourcemaps": "^2.6.5",
     "postcss": "^7.0.2",
     "precss": "^3.1.2"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "ie 10"
+    ],
+    "modern": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ],
+    "ssr": [
+      "node 12"
+    ]
+  },
+  "dependencies": {
+    "postcss-cli": "^7.1.0"
   }
 }

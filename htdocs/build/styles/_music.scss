@@ -1,190 +1,114 @@
+
 .background-portfolio-music{
-  position: relative;
-  background-image: url('../img/Startbild.jpg');
-  background-size: cover;
-  background-position: 90% 90%;
+  background-image: url('../img/mobile/music_one.png');
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: 100%;
 
-
-  /*
-
-    @media (min-height: 807px) and (min-width: 1024px){
-      background-image: url('../img/mobile/music_laptop_only.png');
-      background-position: center 50%;
-      background-size: 100%;
-    }
-
-    @media (min-height: 946px) and (min-width: 1024px){
-      background-image: url('../img/mobile/music_laptop_only.png');
-      background-position: center 50%;
-      background-size: 100%;
-    }
-  */
-  @media only screen and (min-width: 1024px){
-    background-image: url('../img/mobile/music_laptop_1024.png');
-    background-position: center 30%;
-    background-size: 105%;
+  @media (min-width: 200px){
+    background-position: 20%, 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  @media (min-width: 1199px){
-    background-image: url('../img/mobile/music_laptop_1024.png');
-    background-position: 20% 50%;
-    background-size: calc(100% * 1.08);
-    /* 108*/
-  }
-
-
-  @media (min-height: 766px) and (min-width: 1440px){
-    background-image: url('../img/mobile/music_laptop_only.png');
-    background-position: center 50%;
-    background-size: 108%;
-  }
-
-
-  @media (min-height: 850px) and (min-width: 1440px){
-    background-image: url('../img/mobile/music_desk_1660.png');
-    background-position: center 50%;
-    background-size: 113%;
-  }
-
-  @media (min-height: 807px) and (min-width: 1660px){
-    background-image: url('../img/mobile/music_desk_1660.png');
-    background-position: center 50%;
-    background-size: 108%;
-  }
-
-  @media (min-height: 850px) and (min-width: 1660px){
-    background-image: url('../img/mobile/music_desk_1660.png');
-    background-position: center 50%;
-    background-size: 100%;
-  }
-
-  @media (min-height: 850px) and (min-width: 1800px){
-    background-image: url('../img/mobile/musik_desk_1800.png');
-    background-position: center 50%;
-    background-size: 100%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-  @media only screen and (max-width: 1024px){
-    background-image: url('../img/mobile/ipad_landscp_music.png');
-    background-position: center 30%;
-    background-size: 105%;
-  }
-
-  @media (max-width: 991px){
-    background-image: url('../img/mobile/ipad_portrait_music.jpg');
-    background-position: center 45%;
-    background-size: 105%;
-  }
-
-  @media (max-width: 768px){
-    background-image: url('../img/mobile/iphone678_portrai_musci.jpg');
-    background-position: 0 50%;
-    background-size: auto;
-  }
-
-
+  /* phone */
+  /* handhelt phone  5,6,7*/
   @media only screen
-  and (max-device-width : 1024px)
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    background-size: 130%;
+    background-position: 0% 100%;
+    height: auto;
+  }
+  /* handhelt phone  5,6,7*/
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    background-position: 20%, 5%;
+    background-size: cover;
+    height: auto;
+  }
+  /* handhelt phone  xr usw */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3){
+    background-position: 20%, 5%;
+    background-size: cover;
+    height: auto;
+  }
+  /* handhelt phone  6,7,8 */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3){
+    background-position: 20%, 5%;
+    background-size: cover;
+    height: auto;
+  }
+
+  /* ipad portrait*/
+  @media only screen
   and (min-device-width : 768px)
+  and (max-device-width : 1024px)
   and (orientation : portrait){
-    background-image: url('../img/mobile/ipad_portrait_music.jpg');
-    background-position: center 45%;
-    background-size: 105%;
+    background-size: 130%;
+    background-position: 0% 100%;
+    height: auto;
   }
 
-
-
-  @media (max-width: 414px){
-
-    &:before{
-      content: "";
-      //background-image: url('../img/mobile/iphone_portrait_start.png');
-      background-position: 0 30%;
-      background-size: contain;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  @media (max-width: 375px){
-    background-position: 0 30%;
-    background-size: contain;
-    background-attachment: fixed;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-  }
-  @media (max-width: 320px){
-
-    background-image: url('../img/mobile/iphone5_portrait_music.png');
-    background-position: center 242%;
+  /* ipad landscape */
+  /* ipad landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape){
     background-size: 100%;
+    background-position: 0% 63%;
+    height: 86vh;
   }
 
-  @media
-  only screen and (-webkit-min-device-pixel-ratio: 3),
-  only screen and (   min--moz-device-pixel-ratio: 3),
-  only screen and (     -o-min-device-pixel-ratio: 3/1),
-  only screen and (        min-device-pixel-ratio: 3),
-  only screen and (                min-resolution: 458dpi),
-  only screen and (                min-resolution: 3dppx) {
-    background-image: url('../img/mobile/iphoneX_portrait_music.png');
-    background-position: center 59%;
-    background-size: 100%;
-  }
-
-  // iphone xr
   @media only screen
-  and (device-width : 414px)
-  and (device-height : 896px)
-  and (-webkit-device-pixel-ratio : 2){
-    background-position: center 35%;
-    background-size: 106%;
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 2){
+    background-position: 0% 77%;
   }
 
-  //iphone xs
+} // class background-portfolio
+
+.bs-main{
   @media only screen
-  and (device-width : 375px)
-  and (device-height : 812px)
-  and (-webkit-device-pixel-ratio : 3){
-    background-position: center 35%;
-    background-size: 106%;
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait){
+    height: 65vh;
   }
 
-  //iphone xs max
+
   @media only screen
-  and (device-width : 414px)
-  and (device-height : 896px)
-  and (-webkit-device-pixel-ratio : 3){
-    background-position: center 35%;
-    background-size: 106%;
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    height: auto;
   }
-
-
+  /*
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: landscape){
+    height: 65vh;
+  }*/
 
 }
 
 
-.content{
-
-  @media (min-height: 766px) and (min-width: 1440px){
-    position: relative;
-  }
+.music-content{
 
   iframe.player_music {
     width: 30%;
@@ -194,149 +118,92 @@
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
 
-    @media (max-width: 991px){
-      width: 90%;
+    @media (min-width: 300px){
+      height: 270px;
+      top: 36%;
       left: 5%;
-      top: 50%;
+      width: 90%;
     }
 
+    @media (min-width: 991px){
+      height: 150px;
+      left: 59%;
+      top: calc(28% + 1vw);
+      width: 36%;
+    }
+
+    /* handhelt phone  5,6,7*/
     @media only screen
-    and (max-device-width : 1024px)
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2){
+      top: 24%;
+    }
+    /* handhelt phone  5,6,7*/
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2){
+      top: 30%;
+      height: 250px;
+    }
+    /* handhelt phone  xr usw */
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3){
+      top: 30%;
+      height: 250px;
+    }
+    /* handhelt phone  6,7,8 */
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3){
+      top: 30%;
+      height: 250px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 326dpi),
+    only screen and (                min-resolution: 2dppx){
+      top: 33%;
+      height: 250px;
+    }
+
+
+    /* ipad portrait */
+    @media only screen
     and (min-device-width : 768px)
+    and (max-device-width : 1024px)
     and (orientation : portrait){
-      width: 90%;
-      left: 5%;
-      top: 50%;
-    }
-
-
-    @media (max-width: $screen-xs-max) {
-      left: 5%;
-      width: 90%;
-      top: 35%;
-      height: 300px;
-    }
-
-    @media (max-width: 525px) {
-      height: auto;
-    }
-    @media (max-width: $screen-xs-min) {
-      //display: none;
-      height: 240px;
-      padding: 2px;
-      top: 67%;
-      margin: 0;
-
-    }
-
-    /* iphone 6.7.8 S */
-    @media (max-width: 414px) {
-      top: 45%;
-      width: 80%;
-      left: 10%;
-
-      .to_down_320 {
-        height: auto;
-      }
-    }
-
-    /* iphone 6,7,8 normal Iphone X*/
-    @media (max-width: 375px) {
-      top: 32%;
-      background-color: rgba(0,0,0,0.6);
-      opacity: 0.8;
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio: 3),
-    only screen and (min--moz-device-pixel-ratio: 3),
-    only screen and (-o-min-device-pixel-ratio: 3/1),
-    only screen and (min-device-pixel-ratio: 3),
-    only screen and (min-resolution: 458dpi),
-    only screen and (min-resolution: 3dppx) {
-      top: 30%;
-    }
-
-    // iphone xr
-    @media only screen
-    and (device-width : 414px)
-    and (device-height : 896px)
-    and (-webkit-device-pixel-ratio : 2){
       top: 33%;
-    }
-
-    //iphone xs
-    @media only screen
-    and (device-width : 375px)
-    and (device-height : 812px)
-    and (-webkit-device-pixel-ratio : 3){
-      top: 33%;
-    }
-
-    //iphone xs max
-    @media only screen
-    and (device-width : 414px)
-    and (device-height : 896px)
-    and (-webkit-device-pixel-ratio : 3){
-      top: 33%;
-    }
-
-
-    /* ihpone4 iphone5 */
-    @media (max-width: 320px) {
-      top: 30%;
-      width: 80%;
-      height: 220px;
-    }
-    @media (min-width: $screen-sm) {
+      height: 250px;
       width: 60%;
       left: 20%;
-      top: 39%;
-      height: 230px;
     }
 
     /* ipad landscape */
-    @media (min-width: 1024px) {
-      background-color: rgba(0, 0, 0, 0.6);
-      opacity: 0.8;
-      padding: 5px;
-      width: 50%;
-      top: 37%;
-      left: 46%;
-      position: fixed;
-      height: 26.5%;
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape){
+      top: 32%;
+      height: 150px;
     }
 
-    @media (min-width: 1199px) {
-      width: 50%;
-      top: 37.5%;
-      left: 46%;
-    }
-
-
-
-    @media (min-height: 766px) and (min-width: 1440px){
-      top: 274px;
-      position: absolute;
-      height: 244px;
-      left: 50%;
-      width: 42%;
-    }
-
-
-    @media (min-height: 780px) and(min-width: 1440px) {
-      width: 37%;
-      top: 37.5%;
-      left: 51%;
-      position: fixed;
-      height: 235px;
-    }
-
-
-
-
-    @media (min-width: 1600px) {
-      top: 39.5%;
-      width: 33%;
-      height: 240px;
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape)
+    and (-webkit-min-device-pixel-ratio: 2){
+      height: 245px;
+      top: 36%;
+      left: 52%;
     }
   }
 }
