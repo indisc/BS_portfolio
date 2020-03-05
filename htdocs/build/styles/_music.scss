@@ -1,6 +1,6 @@
 
 .background-portfolio-music{
-  background-image: url('../img/mobile/music_one.png');
+  background-image: url('../img/mobile/music_ipad_1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,14 +12,32 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: 991px){
+    background-image: url('../img/mobile/music_one.png');
+    background-position: 20% calc(90% + 2vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 1280px){
+    background-position: 20% calc(90% + 4vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 1440px){
+    background-position: 20% calc(90% + 6vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
   /* phone */
   /* handhelt phone  5,6,7*/
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2){
-    background-size: 130%;
-    background-position: 0% 100%;
+    background-size: cover;
+    background-position: 0% 65%;
     height: auto;
   }
   /* handhelt phone  5,6,7*/
@@ -55,8 +73,8 @@
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
   and (orientation : portrait){
-    background-size: 130%;
-    background-position: 0% 100%;
+    background-size: cover;
+    background-position: 0% 75%;
     height: auto;
   }
 
@@ -81,13 +99,19 @@
 
 } // class background-portfolio
 
-.bs-main{
-  @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation : portrait){
-    height: 65vh;
+
+
+
+@media only screen
+and(min-device-width: 768px)
+and(max-device-width: 1024px)
+and(orientation: landscape){
+  _:default:not(:root:root), .background-portfolio-music {
+    height: 72vh;
   }
+}
+
+.bs-main{
 
 
   @media only screen
@@ -96,17 +120,17 @@
   and (-webkit-min-device-pixel-ratio: 2){
     height: auto;
   }
-  /*
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  and (orientation: landscape){
-    height: 65vh;
-  }*/
-
 }
 
+@media only screen
+and(min-device-width: 768px)
+and(max-device-width: 1024px)
+and(orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 0){
+  _:default:not(:root:root), .background-portfolio-music {
+    height: 72vh;
+  }
+}
 
 .music-content{
 
@@ -125,11 +149,16 @@
       width: 90%;
     }
 
+    @media (min-width: 414px){
+      width: 50%;
+      left: 25%;
+    }
+
     @media (min-width: 991px){
-      height: 150px;
-      left: 59%;
-      top: calc(28% + 1vw);
-      width: 36%;
+      height: 250px;
+      left: 51%;
+      top: calc(40% + 1vw);
+      width: 42%;
     }
 
     /* handhelt phone  5,6,7*/
@@ -137,15 +166,16 @@
     and (min-device-width: 320px)
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2){
-      top: 24%;
+      top: 26%;
+      height: 270px;
     }
     /* handhelt phone  5,6,7*/
     @media only screen
     and (min-device-width: 375px)
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2){
-      top: 30%;
-      height: 250px;
+      top: 26%;
+      height: 270px;
     }
     /* handhelt phone  xr usw */
     @media only screen
@@ -153,7 +183,7 @@
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3){
       top: 30%;
-      height: 250px;
+      height: 270px;
     }
     /* handhelt phone  6,7,8 */
     @media only screen
@@ -161,9 +191,9 @@
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3){
       top: 30%;
-      height: 250px;
+      height: 270px;
     }
-
+/*
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (   min--moz-device-pixel-ratio: 2),
@@ -175,7 +205,7 @@
       height: 250px;
     }
 
-
+*/
     /* ipad portrait */
     @media only screen
     and (min-device-width : 768px)
@@ -192,8 +222,8 @@
     and (min-device-width : 768px)
     and (max-device-width : 1024px)
     and (orientation : landscape){
-      top: 32%;
-      height: 150px;
+      top: 34%;
+      height: 250px;
     }
 
     @media only screen
