@@ -1,4 +1,8 @@
 
+html>/**/body .background-portfolio-music, x:-moz-any-link, x:default{
+  height: 74vh;
+}
+
 .background-portfolio-music{
   background-image: url('../img/mobile/music_ipad_1.jpg');
   background-position: center;
@@ -83,9 +87,10 @@
   @media only screen
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
-  and (orientation : landscape){
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 1){
     background-size: 100%;
-    background-position: 0% 63%;
+    background-position: 0% 78%;
     height: 86vh;
   }
 
@@ -105,11 +110,24 @@
 @media only screen
 and(min-device-width: 768px)
 and(max-device-width: 1024px)
-and(orientation: landscape){
+and(orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1){
   _:default:not(:root:root), .background-portfolio-music {
-    height: 72vh;
+    height: 68vh;
   }
 }
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2){
+  .background-portfolio-music {
+    height: auto;
+  }
+}
+
+
 
 .bs-main{
 
@@ -118,7 +136,9 @@ and(orientation: landscape){
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
   and (-webkit-min-device-pixel-ratio: 2){
-    height: auto;
+    @-moz-document url-prefix(){
+      height: 71vh;
+    }
   }
 }
 
@@ -139,7 +159,7 @@ and (-webkit-min-device-pixel-ratio: 0){
     position: absolute;
     top: 35%;
     left: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
 
     @media (min-width: 300px){
@@ -155,10 +175,10 @@ and (-webkit-min-device-pixel-ratio: 0){
     }
 
     @media (min-width: 991px){
-      height: 250px;
-      left: 51%;
-      top: calc(40% + 1vw);
-      width: 42%;
+      height: 300px;
+      left: 60%;
+      top: calc(37% + 1vw);
+      width: 25%;
     }
 
     /* handhelt phone  5,6,7*/
@@ -217,13 +237,17 @@ and (-webkit-min-device-pixel-ratio: 0){
       left: 20%;
     }
 
+
     /* ipad landscape */
     @media only screen
     and (min-device-width : 768px)
     and (max-device-width : 1024px)
-    and (orientation : landscape){
-      top: 34%;
+    and (orientation : landscape)
+      and (-webkit-min-device-pixel-ratio: 1){
+      top: 31%;
       height: 250px;
+      left: 52%;
+      width: 40%;
     }
 
     @media only screen
@@ -231,9 +255,10 @@ and (-webkit-min-device-pixel-ratio: 0){
     and (max-device-width : 1024px)
     and (orientation : landscape)
     and (-webkit-min-device-pixel-ratio: 2){
-      height: 245px;
-      top: 36%;
+      height: 255px;
+      top: 34%;
       left: 52%;
+      width: 40%;
     }
   }
 }

@@ -17,6 +17,11 @@ body{
 
 }
 
+.active_color{
+  color: $third-active;
+}
+
+
 h1,h2,h3,h4,h5,h6{
   padding: 0;
   margin: 0;
@@ -245,6 +250,7 @@ a{
   .header-group{
     max-width: 100%;
     padding-left: $spa10 * 3;
+
     @media (max-width: 990.8px){
       display: flex;
       flex-direction: column;
@@ -292,6 +298,7 @@ a{
     and (-webkit-min-device-pixel-ratio: 3){
       padding-bottom: 0.3em;
     }
+
 
 
 
@@ -434,7 +441,17 @@ a{
   }
 }
 
+html>/**/body .bs-header, x:-moz-any-link, x:default{
+    height: 13vh;
+}
 
+html>/**/body .bs-footer, x:-moz-any-link, x:default{
+  height: 13vh;
+}
+
+html>/**/body .background-portfolio, x:-moz-any-link, x:default{
+  height: 74vh;
+}
 
 .background-portfolio{
   background-image: url('../img/mobile/start_portfolio.png');
@@ -501,7 +518,7 @@ a{
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
   and (orientation : landscape){
-    background-position: 0%, 63%;
+    background-position: 0% 63%;
     _:default:not(:root:root){height: 60vh;}
   }
 
@@ -514,18 +531,42 @@ a{
     background-position: 0% 72%;
   }
 
+  @media (min-width: 1280px){
+    background-position: 60% 63%;
+  }
+
 } // class background-portfolio
 
 @media only screen
 and(min-device-width: 768px)
 and(max-device-width: 1024px)
-and(orientation: landscape){
+and(orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1){
   _:default:not(:root:root), .background-portfolio {
-height: 72vh;
-}
+    height: 68vh;
+  }
+  @-moz-document url-prefix(){
+    .background-portfolio {
+      height: 68vh;
+    }
+  }
 }
 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2){
+  _:default:not(:root:root),.background-portfolio {
+    height: auto;
+  }
 
+  @-moz-document url-prefix(){
+    .background-portfolio {
+      height: 68vh;
+    }
+  }
+}
 
 
 .bs-main{
@@ -542,7 +583,11 @@ height: 72vh;
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
   and (-webkit-min-device-pixel-ratio: 2){
-    height: auto;
+    @-moz-document url-prefix(){
+        height: 71vh;
+    }
+
+    //height: auto;
   }
 }
 
@@ -561,7 +606,7 @@ height: 72vh;
     position: absolute;
     top: 80%;
     left: 5%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     z-index: 0;
 

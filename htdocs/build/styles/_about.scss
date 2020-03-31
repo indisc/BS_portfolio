@@ -1,3 +1,7 @@
+html>/**/body .background-portfolio-about, x:-moz-any-link, x:default{
+  height: 74vh;
+}
+
 .background-portfolio-about{
   background-image: url('../img/mobile/music_one.png');
   background-position: center;
@@ -18,12 +22,13 @@
     background-repeat: no-repeat;
   }
   @media (min-width: 1280px){
-    background-position: 20% calc(90% + 3vw);
+    /*background-position: 20% calc(90% + 3vw);*/
+    background-position: 20%;
     background-size: cover;
     background-repeat: no-repeat;
   }
   @media (min-width: 1440px){
-    background-position: 20% calc(90% + 4vw);
+    /*background-position: 20% calc(90% + 4vw);*/
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -95,8 +100,16 @@
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
   and (orientation : landscape)
-  and (-webkit-min-device-pixel-ratio: 0){
-    height: 73vh;
+  and (-webkit-min-device-pixel-ratio: 1){
+    height: 68vh;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 2){
+    height: auto;
   }
 
   @media only screen
@@ -105,7 +118,9 @@
   and (orientation : landscape)
   and (-webkit-min-device-pixel-ratio: 2){
     background-position: 0% 77%;
-    height: 67vh;
+    @-moz-document url-prefix(){
+      height: 71vh;
+    }
   }
 
 } // class background-portfolio
@@ -116,15 +131,49 @@
   }
 }
 
+.bs-header{
+  position: relative;
+}
 
 .content-about {
   background-color: $black;
   padding: 0 20px;
   padding-top: 1px;
   font-size: 2rem;
+  @media (min-width: 991px){
+    position: absolute;
+    background-color: $black_opaci;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    padding: 20px;
+  }
+
+  /* ipad landscape */
+  /* ipad landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape){
+    position: absolute;
+    background-color: $black_opaci;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    padding: 20px;
+  }
+
+  @media (min-width: 1025px){
+    position: absolute;
+    background-color: $black_opaci;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    padding: 20px;
+  }
 
   @media (min-width: 1280px){
-    padding: 0 65px;
+    padding: 30px 65px;
   }
 
   .content-wrap{
@@ -214,6 +263,10 @@
     &:last-child{
       padding-top: 10px;
       padding-bottom: 25px;
+
+      @media (min-width: 1025px){
+        padding-bottom: 0;
+      }
 
       /* handhelt phone  5,6,7*/
       @media only screen
