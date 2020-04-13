@@ -86,10 +86,10 @@ a{
     grid-template-rows: calc(9em - 2vw) 1fr calc(7em - 2vw);
   }
   @media (min-width: 1280px){
-    -ms-grid-rows: -webkit-calc(9em - 2vw) 1fr -webkit-calc(7em - 2vw);
-    -ms-grid-rows: calc(9em - 2vw) 1fr calc(7em - 2vw);
-    grid-template-rows: -webkit-calc(9em - 2vw) 1fr -webkit-calc(7em - 2vw);
-    grid-template-rows: calc(9em - 2vw) 1fr calc(7em - 2vw);
+    -ms-grid-rows: -webkit-calc(8em - 2vw) 1fr -webkit-calc(8em - 2vw);
+    -ms-grid-rows: calc(8em - 2vw) 1fr calc(8em - 2vw);
+    grid-template-rows: -webkit-calc(8em - 2vw) 1fr -webkit-calc(8em - 2vw);
+    grid-template-rows: calc(8em - 2vw) 1fr calc(8em - 2vw);
   }
 
 
@@ -231,7 +231,6 @@ a{
   @media (min-width: 320px){
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 0.5em;
     padding: {
       top: 0.5em;
       bottom: 0.5em;
@@ -520,6 +519,14 @@ html>/**/body .background-portfolio, x:-moz-any-link, x:default{
   and (orientation : landscape){
     background-position: 0% 63%;
     _:default:not(:root:root){height: 60vh;}
+    @-moz-document url-prefix(''){
+      height: 71vh
+
+    }
+
+  }
+  @media all and (min--moz-device-pixel-ratio:0) and (max-width: 1024px){
+    height: 71vh;
   }
 
 
@@ -535,6 +542,14 @@ html>/**/body .background-portfolio, x:-moz-any-link, x:default{
     background-position: 60% 63%;
   }
 
+  @media all and (min--moz-device-pixel-ratio:0)
+  and (min-resolution: .001dpcm)
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape){
+    height: 68vh;
+  }
+
 } // class background-portfolio
 
 @media only screen
@@ -543,28 +558,17 @@ and(max-device-width: 1024px)
 and(orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1){
   _:default:not(:root:root), .background-portfolio {
-    height: 68vh;
-  }
-  @-moz-document url-prefix(){
-    .background-portfolio {
-      height: 68vh;
-    }
+    height: 63vh;
   }
 }
 
-@media only screen
+@media all and (min--moz-device-pixel-ratio:0)
+and (min-resolution: .001dpcm)
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 2){
-  _:default:not(:root:root),.background-portfolio {
-    height: auto;
-  }
-
-  @-moz-document url-prefix(){
-    .background-portfolio {
-      height: 68vh;
-    }
+and (orientation : landscape){
+  .background-portfolio{
+    height: 68vh;
   }
 }
 
@@ -612,7 +616,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 
     @media (min-width: 300px){
       height: 150px;
-      top: 67%
+      top: 62%
     }
 
     @media (min-width: 991px){
@@ -665,7 +669,6 @@ and (-webkit-min-device-pixel-ratio: 2){
   align-items: center;
 
 
-
   @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
@@ -680,6 +683,13 @@ and (-webkit-min-device-pixel-ratio: 2){
   and (-webkit-min-device-pixel-ratio: 1)
   and (orientation: landscape){
     height: 15vh;
+
+    .bottom-bar{
+      padding: {
+        top: 0.5em;
+        bottom: 0.5em;
+      }
+    }
   }
 
   @media only screen
@@ -688,6 +698,13 @@ and (-webkit-min-device-pixel-ratio: 2){
   and (orientation : portrait)
   and (-webkit-min-device-pixel-ratio: 2){
     height: 9vh;
+
+    .bottom-bar{
+      padding: {
+        top: 0.5em;
+        bottom: 0.5em;
+      }
+    }
   }
 
   @media only screen
@@ -786,7 +803,6 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
 
 }
-
 
 
 

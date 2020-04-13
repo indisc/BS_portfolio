@@ -109,7 +109,10 @@ html>/**/body .background-portfolio-about, x:-moz-any-link, x:default{
   and (max-device-width : 1024px)
   and (orientation : landscape)
   and (-webkit-min-device-pixel-ratio: 2){
-    height: auto;
+    height: 68vh;
+    @-moz-document url-prefix(){
+      height: 71vh;
+    }
   }
 
   @media only screen
@@ -119,15 +122,37 @@ html>/**/body .background-portfolio-about, x:-moz-any-link, x:default{
   and (-webkit-min-device-pixel-ratio: 2){
     background-position: 0% 77%;
     @-moz-document url-prefix(){
-      height: 71vh;
+      height: 68vh;
     }
   }
 
+
 } // class background-portfolio
+
+@media only screen
+and(min-device-width: 768px)
+and(max-device-width: 1024px)
+and(orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1){
+  _:default:not(:root:root), .background-portfolio-about {
+    height: 63vh;
+  }
+}
+
 
 .bs-main{
   @media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait){
     height: 72vh;
+  }
+
+  @media all and (min--moz-device-pixel-ratio:0)
+  and (min-resolution: .001dpcm)
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape){
+
+      height: 68vh;
+
   }
 }
 

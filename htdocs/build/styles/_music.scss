@@ -91,7 +91,8 @@ html>/**/body .background-portfolio-music, x:-moz-any-link, x:default{
   and (-webkit-min-device-pixel-ratio: 1){
     background-size: 100%;
     background-position: 0% 78%;
-    height: 86vh;
+    //height: 86vh;
+    height: 66vh;
   }
 
   @media only screen
@@ -100,6 +101,15 @@ html>/**/body .background-portfolio-music, x:-moz-any-link, x:default{
   and (orientation : landscape)
   and (-webkit-min-device-pixel-ratio: 2){
     background-position: 0% 77%;
+    height: 66vh;
+  }
+
+  @media all and (min--moz-device-pixel-ratio:0)
+  and (min-resolution: .001dpcm)
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape){
+    height: 68vh;
   }
 
 } // class background-portfolio
@@ -113,20 +123,19 @@ and(max-device-width: 1024px)
 and(orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1){
   _:default:not(:root:root), .background-portfolio-music {
+    height: 63vh;
+  }
+}
+
+@media all and (min--moz-device-pixel-ratio:0)
+and (min-resolution: .001dpcm)
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+  .background-portfolio-music{
     height: 68vh;
   }
 }
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 2){
-  .background-portfolio-music {
-    height: auto;
-  }
-}
-
 
 
 .bs-main{
@@ -137,7 +146,7 @@ and (-webkit-min-device-pixel-ratio: 2){
   and (max-device-width : 1024px)
   and (-webkit-min-device-pixel-ratio: 2){
     @-moz-document url-prefix(){
-      height: 71vh;
+      height: 68vh;
     }
   }
 }
