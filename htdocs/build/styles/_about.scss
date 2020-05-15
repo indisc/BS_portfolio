@@ -144,16 +144,6 @@ and (-webkit-min-device-pixel-ratio: 1){
   @media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait){
     height: 72vh;
   }
-
-  @media all and (min--moz-device-pixel-ratio:0)
-  and (min-resolution: .001dpcm)
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation : landscape){
-
-      height: 68vh;
-
-  }
 }
 
 .bs-header{
