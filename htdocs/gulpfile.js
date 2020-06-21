@@ -67,7 +67,11 @@ gulp.task('styles', function () {
 
 
 gulp.task( 'js', function () {
-    gulp.src([jsDir + '/*.js', jsDir + '**/*' ])
+    gulp.src([
+        jsDir + "soundmanager2.js",
+        jsDir + "player.js",
+        jsDir + 'demo.js',
+    ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest( distDir + 'js' ))
         //.pipe(livereload());
