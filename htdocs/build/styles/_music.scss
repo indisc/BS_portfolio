@@ -148,8 +148,9 @@ and (-webkit-min-device-pixel-ratio: 0){
 }
 
 .music-content{
+  position: relative;
 
-  iframe.player_music {
+  .sm2-bar-ui {
     width: 30%;
     position: absolute;
     top: 35%;
@@ -172,7 +173,7 @@ and (-webkit-min-device-pixel-ratio: 0){
     @media (min-width: 991px){
       height: 300px;
       left: 60%;
-      top: calc(37% + 1vw);
+      top: calc(25% + 1vw);
       width: 25%;
     }
 
